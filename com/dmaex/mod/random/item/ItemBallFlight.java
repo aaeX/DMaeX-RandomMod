@@ -43,6 +43,10 @@ public class ItemBallFlight extends Item{
 					);
 		}
 		
+		// shoots the player up
+		player.addVelocity(0.0, 1.0, 0.0);
+		
+		// make the stack smaller
 		stack.stackSize--;
 		
 		return stack;
