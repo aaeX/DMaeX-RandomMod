@@ -29,7 +29,7 @@ public class ModRandom{
 	//       d of search::anything, for instance)
 	
 	// search::item
-	public static Item itemAwesome;
+	public static Item itemBallFlight;
 	
 	// search::block
 	
@@ -58,12 +58,12 @@ public class ModRandom{
 		// registries, crafting recipes, common things and all.
 		
 		// search::item
-		itemAwesome = new ItemBallFlight(5000);
+		itemBallFlight = new ItemBallFlight(5000);
 		
 		// search::block 
 		
 		// search:register
-		LanguageRegistry.addName(itemAwesome, "Awesome Item");
+		LanguageRegistry.addName(itemBallFlight, "Ball of Flight");
 		
 		// search::recipe
 	}
