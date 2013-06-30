@@ -1,14 +1,23 @@
 == Random Mod ==========================================
 
 Author(s): DigiM, aetherX
-Version: a1.0
+Version: a1.0 xbuild 02
 Description: Random mod for experiment (github and java)
 
 -- DOC -------------------------------------------------
 Ball of Flight:
-| ID5000
+| ID5256
 | Right clicking spawns particles and shoots you into
 | the air
+| Recipe:
+| | NYI
+| | 
+| | 
+
+Wand of Egg:
+| ID5257
+| Right clicking SHOULD shoot eggs, but IDK how to do
+| that :c
 | Recipe:
 | | NYI
 | | 
