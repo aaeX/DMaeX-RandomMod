@@ -27,7 +27,7 @@ public class ItemBallFlight extends Item{
 		Random rand = new Random();
 		
 		// play sound effect
-		world.playSoundAtEntity(player, "random.breath", 1.0F, 1.25F + (rand.nextFloat() / 2));
+		world.playSoundAtEntity(player, "SOMETHING", 1.0F, 1.25F + (rand.nextFloat() / 2)); // gotta set up sounds for this! they are in /mods/ModRandom/sounds
 		
 		// spawn 60 smoke particles with player pos. 
 		// .nextFloat() gives 0.0-1.0, /2 = 0.0-0.5
