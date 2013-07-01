@@ -27,7 +27,7 @@ public class ItemBallFlight extends Item{
 		Random rand = new Random();
 		
 		// play sound effect
-		world.playSoundAtEntity(player, "SOMETHING", 1.0F, 1.25F + (rand.nextFloat() / 2)); // gotta set up sounds for this! they are in /mods/ModRandom/sounds
+		world.playSoundAtEntity(player, "random.fizz", 1.0F, 1.25F + (rand.nextFloat() / 2)); // gotta set up sounds for this! they are in /mods/ModRandom/sounds
 		
 		// spawn 60 smoke particles with player pos. 
 		// .nextFloat() gives 0.0-1.0, /2 = 0.0-0.5
@@ -45,6 +45,9 @@ public class ItemBallFlight extends Item{
 		
 		// shoots the player up
 		player.addVelocity(0.0, 1.0, 0.0);
+		
+		// negate fall damage 
+		player.fallDistance = 0.0F; // note: need a better system for this... ah well!
 		
 		// make the stack smaller
 		stack.stackSize--;
