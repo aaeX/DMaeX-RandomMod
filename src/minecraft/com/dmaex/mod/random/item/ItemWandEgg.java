@@ -1,6 +1,7 @@
 package com.dmaex.mod.random.item;
 
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityEgg;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
@@ -15,7 +16,13 @@ public class ItemWandEgg extends ItemWand{
 	@Override
 	public void onWandTrigger(ItemStack stack, World world, EntityPlayer player){
 		System.out.println("Egg wand triggered!"); // add effect later
-		
+
+	        if (!world.isRemote)
+	        {
+	            world.spawnEntityInWorld(new EntityEgg(world, player));
+	        }
+
+
 		// this should shoot eggs, maybe you can take care of that, digi?
 	}
 }
